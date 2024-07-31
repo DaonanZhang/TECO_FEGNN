@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "./Trainer.py", line 66, in <module>
+    train(job_id, settings)
+  File "./Trainer.py", line 23, in train
+    list_total, list_err = solver.training(settings=settings, job_id=job_id)
+  File "/pfs/data5/home/kit/stud/uqqww/PEGNN_reg4/solver.py", line 91, in training
+    model = PEGCN(num_features_in=settings['num_features_in'], num_features_out=settings['num_features_out'],
+  File "/pfs/data5/home/kit/stud/uqqww/PEGNN_reg4/model.py", line 582, in __init__
+    encoder_layers = TransformerEncoderLayer(settings['d_model'], settings['nhead'],
+NameError: name 'TransformerEncoderLayer' is not defined

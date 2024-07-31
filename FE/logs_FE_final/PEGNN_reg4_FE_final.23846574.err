@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "./Trainer.py", line 66, in <module>
+    train(job_id, settings)
+  File "./Trainer.py", line 23, in train
+    list_total, list_err = solver.training(settings=settings, job_id=job_id)
+  File "/pfs/data5/home/kit/stud/uqqww/PEGNN_reg4/solver.py", line 227, in training
+    outputs_b, targets_b = model(x_b, y_b, c_b, input_lengths, env_features, auxil_lenths, True)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 185, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 200, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/nn/parallel/parallel_apply.py", line 110, in parallel_apply
+    output.reraise()
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+UnboundLocalError: Caught UnboundLocalError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/nn/parallel/parallel_apply.py", line 85, in _worker
+    output = module(*input, **kwargs)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/pfs/data5/home/kit/stud/uqqww/PEGNN_reg4/model.py", line 643, in forward
+    Q_feature_emb = self.transformer_dec(Q_feature_emb)
+UnboundLocalError: local variable 'Q_feature_emb' referenced before assignment
+

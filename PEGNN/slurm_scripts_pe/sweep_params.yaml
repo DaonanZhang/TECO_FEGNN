@@ -1,0 +1,21 @@
+method: random
+metric:
+  goal: minimize
+  name: best_err
+name: offline-sweep
+parameters:
+  fold:
+    values:
+    - 0
+    - 1
+    - 2
+    - 3
+  seed:
+    values:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+program: ./slurm_wrapper_cpu.py
+project: PEGNN_reg4_PE_sweep

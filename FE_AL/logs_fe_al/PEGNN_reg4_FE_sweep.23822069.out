@@ -1,0 +1,287 @@
+Start training...
+{
+  "agent_id": "1a83oax0",
+  "agent_dir": "/pfs/data5/home/kit/stud/uqqww/PEGNN_reg4/wandb/run-20240630_181026-1a83oax0/files",
+  "holdout": 1,
+  "seed": 1,
+  "origin_path": "./Dataset_res250_reg4c/",
+  "bp": false,
+  "full_batch": 128,
+  "conv_dim": 256,
+  "emb_dim": 16,
+  "lr": 1e-05,
+  "batch": 8,
+  "accumulation_steps": 16,
+  "test_batch": 1,
+  "k": 20,
+  "nn_lr": 1e-05,
+  "es_mindelta": 0.5,
+  "es_endure": 5,
+  "num_features_in": 2,
+  "num_features_out": 1,
+  "emb_hidden_dim": 256,
+  "model": "PEGNN",
+  "fold": 4,
+  "lowest_rank": 1,
+  "hp_marker": "tuned",
+  "nn_length": 3,
+  "nn_hidden_dim": 32,
+  "dropout_rate": 0.1,
+  "nhead": 2,
+  "d_model": 32,
+  "num_encoder_layers": 2,
+  "env_features_in": 11,
+  "transformer_dropout": 0.1,
+  "dim_feedforward": 128,
+  "epoch": 3,
+  "debug": true,
+  "aux_task_num": 1,
+  "hyper_lr": 1e-05,
+  "hyper_decay": 0.0,
+  "hyper_pre": -1,
+  "hyper_interval": 100,
+  "hyper_aux_loss_weight": 0.1,
+  "transformer_dec_output": 32,
+  "heads_nn_length": 2,
+  "heads_nn_hidden_dim": 64,
+  "heads_dropout_rate": 0.1,
+  "coffer_slot": "./coffer_FE_al/23822069-2024-06-30-18-11-06/"
+}
+Working on multi-GPU [0, 1, 2, 3]
+Length of df dict: 200
+Length of call list: 5120
+Length of df dict: 200
+Length of call list: 5120
+Length of df dict: 1205
+Length of call list: 30976
+Length of df dict: 200
+Length of call list: 5632
+name: transformer_Q, param: torch.Size([1, 1, 32])
+name: spenc.ffn.layers.0.linear.weight, param: torch.Size([256, 64])
+name: spenc.ffn.layers.0.linear.bias, param: torch.Size([256])
+name: spdec.0.weight, param: torch.Size([128, 256])
+name: spdec.0.bias, param: torch.Size([128])
+name: spdec.2.weight, param: torch.Size([64, 128])
+name: spdec.2.bias, param: torch.Size([64])
+name: spdec.4.weight, param: torch.Size([16, 64])
+name: spdec.4.bias, param: torch.Size([16])
+name: transformer_inc.weight, param: torch.Size([32, 11])
+name: transformer_inc.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.0.norm_1.alpha, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.0.norm_1.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.0.norm_2.alpha, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.0.norm_2.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.0.attn.q_linear.weight, param: torch.Size([32, 32])
+name: transformer_encoder.encoder.layers.0.attn.q_linear.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.0.attn.k_linear.weight, param: torch.Size([32, 32])
+name: transformer_encoder.encoder.layers.0.attn.k_linear.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.0.attn.v_linear.weight, param: torch.Size([32, 32])
+name: transformer_encoder.encoder.layers.0.attn.v_linear.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.0.attn.out.weight, param: torch.Size([32, 32])
+name: transformer_encoder.encoder.layers.0.attn.out.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.0.ff.linear_1.weight, param: torch.Size([128, 32])
+name: transformer_encoder.encoder.layers.0.ff.linear_1.bias, param: torch.Size([128])
+name: transformer_encoder.encoder.layers.0.ff.linear_2.weight, param: torch.Size([32, 128])
+name: transformer_encoder.encoder.layers.0.ff.linear_2.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.1.norm_1.alpha, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.1.norm_1.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.1.norm_2.alpha, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.1.norm_2.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.1.attn.q_linear.weight, param: torch.Size([32, 32])
+name: transformer_encoder.encoder.layers.1.attn.q_linear.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.1.attn.k_linear.weight, param: torch.Size([32, 32])
+name: transformer_encoder.encoder.layers.1.attn.k_linear.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.1.attn.v_linear.weight, param: torch.Size([32, 32])
+name: transformer_encoder.encoder.layers.1.attn.v_linear.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.1.attn.out.weight, param: torch.Size([32, 32])
+name: transformer_encoder.encoder.layers.1.attn.out.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.layers.1.ff.linear_1.weight, param: torch.Size([128, 32])
+name: transformer_encoder.encoder.layers.1.ff.linear_1.bias, param: torch.Size([128])
+name: transformer_encoder.encoder.layers.1.ff.linear_2.weight, param: torch.Size([32, 128])
+name: transformer_encoder.encoder.layers.1.ff.linear_2.bias, param: torch.Size([32])
+name: transformer_encoder.encoder.norm.alpha, param: torch.Size([32])
+name: transformer_encoder.encoder.norm.bias, param: torch.Size([32])
+name: transformer_dec.layers.0.layernorm.weight, param: torch.Size([32])
+name: transformer_dec.layers.0.layernorm.bias, param: torch.Size([32])
+name: transformer_dec.layers.0.linear.weight, param: torch.Size([32, 32])
+name: transformer_dec.layers.0.linear.bias, param: torch.Size([32])
+name: transformer_dec.layers.1.linear.weight, param: torch.Size([32, 32])
+name: transformer_dec.layers.1.linear.bias, param: torch.Size([32])
+name: conv1.bias, param: torch.Size([256])
+name: conv1.lin.weight, param: torch.Size([256, 50])
+name: conv2.bias, param: torch.Size([256])
+name: conv2.lin.weight, param: torch.Size([256, 256])
+{0: 1, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 1, 15: 1, 16: 1, 17: 1, 18: 1, 19: 1, 20: 1, 21: 1, 22: 1, 23: 1, 24: 1, 25: 1, 26: 1, 27: 1, 28: 1, 29: 1, 30: 1, 31: 1, 32: 1, 33: 1, 34: 1, 35: 1, 36: 1, 37: 1, 38: 1, 39: 1, 40: 1, 41: 1, 42: 1, 43: 1, 44: 1, 45: 1, 46: 1, 47: 1, 48: 1, 49: 1, 50: 1, 51: 2, 52: 2, 53: 3, 54: 3}
+DataParallel(
+  (module): PEGCN(
+    (spenc): GridCellSpatialRelationEncoder(
+      (ffn): MultiLayerFeedForwardNN(
+        (layers): ModuleList(
+          (0): SingleFeedForwardNN(
+            (dropout): Dropout(p=0.5, inplace=False)
+            (act): ReLU()
+            (linear): Linear(in_features=64, out_features=256, bias=True)
+          )
+        )
+      )
+    )
+    (spdec): Sequential(
+      (0): Linear(in_features=256, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=64, bias=True)
+      (3): Tanh()
+      (4): Linear(in_features=64, out_features=16, bias=True)
+    )
+    (transformer_inc): Linear(in_features=11, out_features=32, bias=True)
+    (transformer_encoder): Transformer(
+      (encoder): Encoder(
+        (layers): ModuleList(
+          (0-1): 2 x EncoderLayer(
+            (norm_1): Norm()
+            (norm_2): Norm()
+            (dropout_1): Dropout(p=0.1, inplace=False)
+            (dropout_2): Dropout(p=0.1, inplace=False)
+            (attn): MultiHeadAttention(
+              (q_linear): Linear(in_features=32, out_features=32, bias=True)
+              (k_linear): Linear(in_features=32, out_features=32, bias=True)
+              (v_linear): Linear(in_features=32, out_features=32, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+              (out): Linear(in_features=32, out_features=32, bias=True)
+            )
+            (ff): FeedForward(
+              (linear_1): Linear(in_features=32, out_features=128, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+              (linear_2): Linear(in_features=128, out_features=32, bias=True)
+            )
+          )
+        )
+        (norm): Norm()
+      )
+    )
+    (transformer_dec): MultiLayerFeedForwardNN(
+      (layers): ModuleList(
+        (0): SingleFeedForwardNN(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (act): ReLU()
+          (layernorm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+          (linear): Linear(in_features=32, out_features=32, bias=True)
+        )
+        (1): SingleFeedForwardNN(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (act): ReLU()
+          (linear): Linear(in_features=32, out_features=32, bias=True)
+        )
+      )
+    )
+    (conv1): GCNConv(50, 256)
+    (conv2): GCNConv(256, 256)
+    (task_heads): ModuleList(
+      (0-1): 2 x Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+
+Training to 3 epochs (8 of mini batch size)
+Each epoch #real_iter: 40.0
+working on training loop
+	Iter 1 - Loss: 0.2279195934534073 Aux_loss:[0.021664973348379135] - real_iter_time: 4.267709493637085	Iter 2 - Loss: 0.3121214210987091 Aux_loss:[0.02420940436422825] - real_iter_time: 1.7082023620605469	Iter 3 - Loss: 0.25167351961135864 Aux_loss:[0.0166691392660141] - real_iter_time: 1.677663803100586	Iter 4 - Loss: 0.36698657274246216 Aux_loss:[0.025027453899383545] - real_iter_time: 1.4976351261138916	Iter 5 - Loss: 0.26863837242126465 Aux_loss:[0.019037069752812386] - real_iter_time: 1.5883474349975586	Iter 6 - Loss: 0.3756530284881592 Aux_loss:[0.014803937636315823] - real_iter_time: 1.7584664821624756	Iter 7 - Loss: 0.34358668327331543 Aux_loss:[0.015498079359531403] - real_iter_time: 1.3119111061096191	Iter 8 - Loss: 0.2942191958427429 Aux_loss:[0.019286565482616425] - real_iter_time: 1.1172418594360352	Iter 9 - Loss: 0.27980074286460876 Aux_loss:[0.01377488300204277] - real_iter_time: 1.0879969596862793	Iter 10 - Loss: 0.3920063376426697 Aux_loss:[0.015010228380560875] - real_iter_time: 1.248478651046753	Iter 11 - Loss: 0.2587541341781616 Aux_loss:[0.01667322777211666] - real_iter_time: 1.2951140403747559	Iter 12 - Loss: 0.3033201992511749 Aux_loss:[0.016541628167033195] - real_iter_time: 1.2996253967285156	Iter 13 - Loss: 0.29802361130714417 Aux_loss:[0.0177095215767622] - real_iter_time: 1.3218340873718262	Iter 14 - Loss: 0.26101452112197876 Aux_loss:[0.02157132886350155] - real_iter_time: 1.1935951709747314	Iter 15 - Loss: 0.2976972758769989 Aux_loss:[0.01714523881673813] - real_iter_time: 1.4753122329711914	Iter 16 - Loss: 0.251315176486969 Aux_loss:[0.016696089878678322] - real_iter_time: 1.3189926147460938	Iter 17 - Loss: 0.2414664924144745 Aux_loss:[0.014802297577261925] - real_iter_time: 1.3606312274932861	Iter 18 - Loss: 0.3009111285209656 Aux_loss:[0.014131606556475163] - real_iter_time: 1.3697078227996826	Iter 19 - Loss: 0.31973201036453247 Aux_loss:[0.019437720999121666] - real_iter_time: 1.0810909271240234	Iter 20 - Loss: 0.19388461112976074 Aux_loss:[0.016306672245264053] - real_iter_time: 1.1915781497955322	Iter 21 - Loss: 0.1980007290840149 Aux_loss:[0.019165366888046265] - real_iter_time: 1.1569056510925293	Iter 22 - Loss: 0.29917052388191223 Aux_loss:[0.020878301933407784] - real_iter_time: 1.2216310501098633	Iter 23 - Loss: 0.25234705209732056 Aux_loss:[0.024655591696500778] - real_iter_time: 1.2216911315917969	Iter 24 - Loss: 0.20756560564041138 Aux_loss:[0.013645520433783531] - real_iter_time: 1.37306809425354	Iter 25 - Loss: 0.18800818920135498 Aux_loss:[0.013813446275889874] - real_iter_time: 1.2873337268829346	Iter 26 - Loss: 0.2310675084590912 Aux_loss:[0.014337328262627125] - real_iter_time: 1.1952228546142578	Iter 27 - Loss: 0.19883009791374207 Aux_loss:[0.021204745396971703] - real_iter_time: 1.1182992458343506	Iter 28 - Loss: 0.3448869287967682 Aux_loss:[0.01142377220094204] - real_iter_time: 1.1650850772857666	Iter 29 - Loss: 0.1943279206752777 Aux_loss:[0.01773788034915924] - real_iter_time: 1.2226860523223877	Iter 30 - Loss: 0.23120242357254028 Aux_loss:[0.016933368518948555] - real_iter_time: 1.1273932456970215	Iter 31 - Loss: 0.20956435799598694 Aux_loss:[0.013577581383287907] - real_iter_time: 1.1900317668914795	Iter 32 - Loss: 0.19163857400417328 Aux_loss:[0.01923801377415657] - real_iter_time: 1.2007684707641602	Iter 33 - Loss: 0.17568032443523407 Aux_loss:[0.018085047602653503] - real_iter_time: 1.1408414840698242	Iter 34 - Loss: 0.18178164958953857 Aux_loss:[0.013517998158931732] - real_iter_time: 0.9850113391876221	Iter 35 - Loss: 0.17622585594654083 Aux_loss:[0.015511143021285534] - real_iter_time: 0.9700994491577148	Iter 36 - Loss: 0.17607459425926208 Aux_loss:[0.01722753793001175] - real_iter_time: 0.9558870792388916	Iter 37 - Loss: 0.14307460188865662 Aux_loss:[0.014643303118646145] - real_iter_time: 0.9538707733154297	Iter 38 - Loss: 0.17262087762355804 Aux_loss:[0.016800643876194954] - real_iter_time: 0.9398999214172363	Iter 39 - Loss: 0.18406033515930176 Aux_loss:[0.013560166582465172] - real_iter_time: 0.9598367214202881	Iter 40 - Loss: 0.14381590485572815 Aux_loss:[0.014779722318053246] - real_iter_time: 0.9535696506500244Start Evaluation
+		--------
+		Iter: 40, inter_train_loss: 9.938667297363281
+		--------
+
+		--------
+		Iter: 40, inter_aux_loss: [0.6867332458496094]
+		--------
+
+		--------
+		test_loss: 533.700927734375, last best test_loss: inf
+		--------
+
+		--------
+		r_squared: -1.8574775058779114, MSE: 24.62678
+		--------
+
+Current epoch: 1
+	Iter 41 - Loss: 0.18788659572601318 Aux_loss:[0.014325312338769436] - real_iter_time: 44.82602834701538	Iter 42 - Loss: 0.19953292608261108 Aux_loss:[0.015877321362495422] - real_iter_time: 1.4725778102874756	Iter 43 - Loss: 0.16267052292823792 Aux_loss:[0.016679465770721436] - real_iter_time: 1.3554317951202393	Iter 44 - Loss: 0.15484458208084106 Aux_loss:[0.01839667744934559] - real_iter_time: 1.3278074264526367	Iter 45 - Loss: 0.19223178923130035 Aux_loss:[0.016827071085572243] - real_iter_time: 1.4773294925689697	Iter 46 - Loss: 0.13213634490966797 Aux_loss:[0.016465522348880768] - real_iter_time: 1.724717378616333	Iter 47 - Loss: 0.22381889820098877 Aux_loss:[0.013242458924651146] - real_iter_time: 1.4552922248840332	Iter 48 - Loss: 0.1906304657459259 Aux_loss:[0.012141399085521698] - real_iter_time: 1.4419751167297363	Iter 49 - Loss: 0.18212319910526276 Aux_loss:[0.016795050352811813] - real_iter_time: 1.3827741146087646	Iter 50 - Loss: 0.12508970499038696 Aux_loss:[0.012777119874954224] - real_iter_time: 1.4790959358215332	Iter 51 - Loss: 0.14378757774829865 Aux_loss:[0.014346746727824211] - real_iter_time: 1.4648640155792236	Iter 52 - Loss: 0.1365315467119217 Aux_loss:[0.016289902850985527] - real_iter_time: 1.3564341068267822	Iter 53 - Loss: 0.1947120726108551 Aux_loss:[0.017775289714336395] - real_iter_time: 1.2931678295135498	Iter 54 - Loss: 0.17529968917369843 Aux_loss:[0.017706146463751793] - real_iter_time: 1.4681358337402344	Iter 55 - Loss: 0.1595553755760193 Aux_loss:[0.014361239038407803] - real_iter_time: 1.1472506523132324	Iter 56 - Loss: 0.18422850966453552 Aux_loss:[0.012744581326842308] - real_iter_time: 1.301781415939331	Iter 57 - Loss: 0.1850014626979828 Aux_loss:[0.01773386262357235] - real_iter_time: 1.2482609748840332	Iter 58 - Loss: 0.12107376009225845 Aux_loss:[0.01622628979384899] - real_iter_time: 1.2157456874847412	Iter 59 - Loss: 0.1523723155260086 Aux_loss:[0.014839556068181992] - real_iter_time: 1.367461919784546	Iter 60 - Loss: 0.12448091804981232 Aux_loss:[0.010185426101088524] - real_iter_time: 1.1459839344024658	Iter 61 - Loss: 0.14793726801872253 Aux_loss:[0.015407903119921684] - real_iter_time: 1.6383309364318848	Iter 62 - Loss: 0.14667551219463348 Aux_loss:[0.018051084131002426] - real_iter_time: 1.525756597518921	Iter 63 - Loss: 0.13621068000793457 Aux_loss:[0.01620955392718315] - real_iter_time: 1.3000762462615967	Iter 64 - Loss: 0.14330333471298218 Aux_loss:[0.01355401985347271] - real_iter_time: 1.2697556018829346	Iter 65 - Loss: 0.20962806046009064 Aux_loss:[0.014254095032811165] - real_iter_time: 1.2860150337219238	Iter 66 - Loss: 0.17112401127815247 Aux_loss:[0.012489600107073784] - real_iter_time: 1.10337495803833	Iter 67 - Loss: 0.1657215654850006 Aux_loss:[0.013905533589422703] - real_iter_time: 1.156337022781372	Iter 68 - Loss: 0.18823564052581787 Aux_loss:[0.017557822167873383] - real_iter_time: 1.1744155883789062	Iter 69 - Loss: 0.2093152403831482 Aux_loss:[0.012291928753256798] - real_iter_time: 1.225081443786621	Iter 70 - Loss: 0.14206908643245697 Aux_loss:[0.016802135854959488] - real_iter_time: 1.2158563137054443	Iter 71 - Loss: 0.11700949817895889 Aux_loss:[0.011675193905830383] - real_iter_time: 1.1247377395629883	Iter 72 - Loss: 0.13097767531871796 Aux_loss:[0.01665487140417099] - real_iter_time: 1.3763904571533203	Iter 73 - Loss: 0.14592820405960083 Aux_loss:[0.012181127443909645] - real_iter_time: 1.1023118495941162	Iter 74 - Loss: 0.14613302052021027 Aux_loss:[0.01754014566540718] - real_iter_time: 1.0979957580566406	Iter 75 - Loss: 0.152835413813591 Aux_loss:[0.011499793268740177] - real_iter_time: 1.1082673072814941	Iter 76 - Loss: 0.12314298003911972 Aux_loss:[0.015521899797022343] - real_iter_time: 1.1104223728179932	Iter 77 - Loss: 0.14717090129852295 Aux_loss:[0.016429059207439423] - real_iter_time: 1.1158759593963623	Iter 78 - Loss: 0.18007753789424896 Aux_loss:[0.012893382459878922] - real_iter_time: 1.111112117767334	Iter 79 - Loss: 0.131089985370636 Aux_loss:[0.01757589355111122] - real_iter_time: 1.1575238704681396	Iter 80 - Loss: 0.1741190254688263 Aux_loss:[0.011780723929405212] - real_iter_time: 1.097259759902954Start Evaluation
+		--------
+		Iter: 80, inter_train_loss: 6.436709403991699
+		--------
+
+		--------
+		Iter: 80, inter_aux_loss: [0.6000118851661682]
+		--------
+
+		--------
+		test_loss: 317.10540771484375, last best test_loss: 533.700927734375
+		--------
+
+		--------
+		r_squared: -0.697807680045184, MSE: 18.98281
+		--------
+
+Current epoch: 2
+	Iter 81 - Loss: 0.14827975630760193 Aux_loss:[0.015475044026970863] - real_iter_time: 44.26832628250122	Iter 82 - Loss: 0.10427726060152054 Aux_loss:[0.013325436972081661] - real_iter_time: 1.464036464691162	Iter 83 - Loss: 0.13618427515029907 Aux_loss:[0.015532820485532284] - real_iter_time: 1.3101608753204346	Iter 84 - Loss: 0.12742209434509277 Aux_loss:[0.015705199912190437] - real_iter_time: 1.4416086673736572	Iter 85 - Loss: 0.15547330677509308 Aux_loss:[0.009560542181134224] - real_iter_time: 1.4215474128723145	Iter 86 - Loss: 0.1746310591697693 Aux_loss:[0.014400376938283443] - real_iter_time: 1.5794625282287598	Iter 87 - Loss: 0.1456170529127121 Aux_loss:[0.014025895856320858] - real_iter_time: 1.3755671977996826	Iter 88 - Loss: 0.12684595584869385 Aux_loss:[0.015760166570544243] - real_iter_time: 1.4632461071014404	Iter 89 - Loss: 0.11605555564165115 Aux_loss:[0.01028883270919323] - real_iter_time: 1.3309669494628906	Iter 90 - Loss: 0.16867296397686005 Aux_loss:[0.008950171992182732] - real_iter_time: 1.357776403427124	Iter 91 - Loss: 0.12628646194934845 Aux_loss:[0.011885160580277443] - real_iter_time: 1.459549903869629	Iter 92 - Loss: 0.1228390783071518 Aux_loss:[0.012458772398531437] - real_iter_time: 1.3900072574615479	Iter 93 - Loss: 0.1456553339958191 Aux_loss:[0.016415083780884743] - real_iter_time: 1.383547306060791	Iter 94 - Loss: 0.1505901962518692 Aux_loss:[0.010621574707329273] - real_iter_time: 1.2905490398406982	Iter 95 - Loss: 0.10424014925956726 Aux_loss:[0.012127513065934181] - real_iter_time: 1.2665081024169922	Iter 96 - Loss: 0.16876113414764404 Aux_loss:[0.009646104648709297] - real_iter_time: 1.3029570579528809	Iter 97 - Loss: 0.0928211584687233 Aux_loss:[0.012160930782556534] - real_iter_time: 1.1084747314453125	Iter 98 - Loss: 0.1206095963716507 Aux_loss:[0.011038088239729404] - real_iter_time: 1.1122825145721436	Iter 99 - Meta_Loss: 0.0032415238674730062 - Main_loss: 0.005696410778909922	Iter 99 - Meta_Loss: 0.014268682338297367 - Main_loss: 0.011448312550783157	Iter 99 - Meta_Loss: 0.006939176470041275 - Main_loss: 0.003838501637801528	Iter 99 - Meta_Loss: 0.007092529442161322 - Main_loss: 0.006022782530635595	Iter 99 - Meta_Loss: 0.005118330009281635 - Main_loss: 0.00398184172809124	Iter 99 - Meta_Loss: 0.007537209428846836 - Main_loss: 0.01173466071486473	Iter 99 - Meta_Loss: 0.002730625681579113 - Main_loss: 0.008196251466870308	Iter 99 - Meta_Loss: 0.009247509762644768 - Main_loss: 0.00381901185028255	Iter 99 - Meta_Loss: 0.007105561904609203 - Main_loss: 0.003930641338229179	Iter 99 - Meta_Loss: 0.013803916051983833 - Main_loss: 0.007709047291427851	Iter 99 - Meta_Loss: 0.009518329054117203 - Main_loss: 0.009205840528011322	Iter 99 - Meta_Loss: 0.005256829783320427 - Main_loss: 0.004615170881152153	Iter 99 - Meta_Loss: 0.00830812193453312 - Main_loss: 0.0033129542134702206	Iter 99 - Meta_Loss: 0.003781770821660757 - Main_loss: 0.009231321513652802	Iter 99 - Meta_Loss: 0.004421531222760677 - Main_loss: 0.007353027351200581	Iter 99 - Loss: 0.10793580114841461 Aux_loss:[0.013180849142372608] - real_iter_time: 4.992670059204102	Iter 99 - Meta_Loss: 0.006388501264154911 - Main_loss: 0.005352391395717859	Iter 100 - Loss: 0.13523714244365692 Aux_loss:[0.014296147972345352] - real_iter_time: 1.574631929397583	Iter 101 - Loss: 0.1493338793516159 Aux_loss:[0.01348844263702631] - real_iter_time: 1.3141894340515137	Iter 102 - Loss: 0.09378721565008163 Aux_loss:[0.009756315499544144] - real_iter_time: 1.5278494358062744	Iter 103 - Loss: 0.18806178867816925 Aux_loss:[0.015118706040084362] - real_iter_time: 1.2344655990600586	Iter 104 - Loss: 0.16335676610469818 Aux_loss:[0.010606865398585796] - real_iter_time: 1.2305107116699219	Iter 105 - Loss: 0.14447540044784546 Aux_loss:[0.018302731215953827] - real_iter_time: 1.5835838317871094	Iter 106 - Loss: 0.1678149551153183 Aux_loss:[0.01106424443423748] - real_iter_time: 1.2945833206176758	Iter 107 - Loss: 0.129598930478096 Aux_loss:[0.00946385320276022] - real_iter_time: 1.309565782546997	Iter 108 - Loss: 0.12761013209819794 Aux_loss:[0.01128672156482935] - real_iter_time: 1.082015037536621	Iter 109 - Loss: 0.1879744678735733 Aux_loss:[0.010606277734041214] - real_iter_time: 1.341203212738037	Iter 110 - Loss: 0.157856285572052 Aux_loss:[0.017728598788380623] - real_iter_time: 1.2707843780517578	Iter 111 - Loss: 0.12850968539714813 Aux_loss:[0.009396874345839024] - real_iter_time: 1.2609336376190186	Iter 112 - Loss: 0.14547528326511383 Aux_loss:[0.012396146543323994] - real_iter_time: 1.2630515098571777	Iter 113 - Loss: 0.12414377182722092 Aux_loss:[0.011489169672131538] - real_iter_time: 1.1599645614624023	Iter 114 - Loss: 0.10677812248468399 Aux_loss:[0.01771262101829052] - real_iter_time: 1.107356071472168	Iter 115 - Loss: 0.13109318912029266 Aux_loss:[0.014595993794500828] - real_iter_time: 1.0444920063018799	Iter 116 - Loss: 0.13886840641498566 Aux_loss:[0.010512106120586395] - real_iter_time: 1.007685661315918	Iter 117 - Loss: 0.09345149993896484 Aux_loss:[0.01541363075375557] - real_iter_time: 1.0954079627990723	Iter 118 - Loss: 0.09775882959365845 Aux_loss:[0.016724487766623497] - real_iter_time: 1.0772383213043213	Iter 119 - Loss: 0.15349189937114716 Aux_loss:[0.015271669253706932] - real_iter_time: 1.0851731300354004	Iter 120 - Loss: 0.13155515491962433 Aux_loss:[0.01159753929823637] - real_iter_time: 1.1503288745880127Start Evaluation
+		--------
+		Iter: 120, inter_train_loss: 5.439433574676514
+		--------
+
+		--------
+		Iter: 120, inter_aux_loss: [0.5193878412246704]
+		--------
+
+		--------
+		test_loss: 283.9872741699219, last best test_loss: 317.10540771484375
+		--------
+
+		--------
+		r_squared: -0.5204906826685514, MSE: 17.96421
+		--------
+
+Current epoch: 3
+	Iter 121 - Loss: 0.1081371083855629 Aux_loss:[0.01008576713502407] - real_iter_time: 44.660829067230225	Iter 122 - Loss: 0.13209588825702667 Aux_loss:[0.010565951466560364] - real_iter_time: 1.4376420974731445	Iter 123 - Loss: 0.11149556934833527 Aux_loss:[0.012094637379050255] - real_iter_time: 1.3364450931549072	Iter 124 - Loss: 0.12739096581935883 Aux_loss:[0.012172069400548935] - real_iter_time: 1.4279584884643555	Iter 125 - Loss: 0.10036199539899826 Aux_loss:[0.013062294572591782] - real_iter_time: 1.4930169582366943	Iter 126 - Loss: 0.13548418879508972 Aux_loss:[0.013300402089953423] - real_iter_time: 1.34651780128479	Iter 127 - Loss: 0.146035298705101 Aux_loss:[0.013181732036173344] - real_iter_time: 1.456092119216919	Iter 128 - Loss: 0.11930731683969498 Aux_loss:[0.01104898750782013] - real_iter_time: 1.5503296852111816	Iter 129 - Loss: 0.12229335308074951 Aux_loss:[0.013384548015892506] - real_iter_time: 1.377694845199585	Iter 130 - Loss: 0.11688562482595444 Aux_loss:[0.012361662462353706] - real_iter_time: 1.3285398483276367	Iter 131 - Loss: 0.1315445899963379 Aux_loss:[0.01085462886840105] - real_iter_time: 1.3203246593475342	Iter 132 - Loss: 0.14061903953552246 Aux_loss:[0.015446130186319351] - real_iter_time: 1.2696797847747803	Iter 133 - Loss: 0.09798991680145264 Aux_loss:[0.013615131378173828] - real_iter_time: 1.2918424606323242	Iter 134 - Loss: 0.1122843325138092 Aux_loss:[0.010924446396529675] - real_iter_time: 1.4110972881317139	Iter 135 - Loss: 0.1311224102973938 Aux_loss:[0.010933708399534225] - real_iter_time: 1.2449755668640137	Iter 136 - Loss: 0.1137828677892685 Aux_loss:[0.010785880498588085] - real_iter_time: 1.1647934913635254	Iter 137 - Loss: 0.10083548724651337 Aux_loss:[0.013288293965160847] - real_iter_time: 1.283597469329834	Iter 138 - Loss: 0.11859555542469025 Aux_loss:[0.0109004070982337] - real_iter_time: 1.1928315162658691	Iter 139 - Loss: 0.13026581704616547 Aux_loss:[0.015610890462994576] - real_iter_time: 1.2247672080993652	Iter 140 - Loss: 0.1121440976858139 Aux_loss:[0.012470833957195282] - real_iter_time: 1.1886003017425537	Iter 141 - Loss: 0.1304509937763214 Aux_loss:[0.012793776579201221] - real_iter_time: 1.2194304466247559	Iter 142 - Loss: 0.11574625223875046 Aux_loss:[0.015270358882844448] - real_iter_time: 1.2856736183166504	Iter 143 - Loss: 0.11461114138364792 Aux_loss:[0.013173582032322884] - real_iter_time: 1.2426221370697021	Iter 144 - Loss: 0.15663990378379822 Aux_loss:[0.01645241677761078] - real_iter_time: 1.2861943244934082	Iter 145 - Loss: 0.12939158082008362 Aux_loss:[0.009405943565070629] - real_iter_time: 1.193828821182251	Iter 146 - Loss: 0.11124983429908752 Aux_loss:[0.008000769652426243] - real_iter_time: 1.3991572856903076	Iter 147 - Loss: 0.1309528797864914 Aux_loss:[0.008773581124842167] - real_iter_time: 1.205338954925537	Iter 148 - Loss: 0.11308236420154572 Aux_loss:[0.00694951182231307] - real_iter_time: 1.227266550064087	Iter 149 - Loss: 0.10899534821510315 Aux_loss:[0.007080797106027603] - real_iter_time: 1.2031540870666504	Iter 150 - Loss: 0.12856915593147278 Aux_loss:[0.012720556929707527] - real_iter_time: 1.2220923900604248	Iter 151 - Loss: 0.16543850302696228 Aux_loss:[0.011718983761966228] - real_iter_time: 1.1064107418060303	Iter 152 - Loss: 0.13827873766422272 Aux_loss:[0.011292804963886738] - real_iter_time: 1.1699931621551514	Iter 153 - Loss: 0.11374859511852264 Aux_loss:[0.009763576090335846] - real_iter_time: 1.012455701828003	Iter 154 - Loss: 0.11581776291131973 Aux_loss:[0.011438040062785149] - real_iter_time: 0.993241548538208	Iter 155 - Loss: 0.13679850101470947 Aux_loss:[0.013746801763772964] - real_iter_time: 1.0015864372253418	Iter 156 - Loss: 0.11357422173023224 Aux_loss:[0.013081755489110947] - real_iter_time: 1.0356593132019043	Iter 157 - Loss: 0.1284773349761963 Aux_loss:[0.011044900864362717] - real_iter_time: 1.0514724254608154	Iter 158 - Loss: 0.12489233911037445 Aux_loss:[0.013864301145076752] - real_iter_time: 1.0189664363861084	Iter 159 - Loss: 0.09026166796684265 Aux_loss:[0.007852064445614815] - real_iter_time: 1.2505192756652832	Iter 160 - Loss: 0.1050105094909668 Aux_loss:[0.008801832795143127] - real_iter_time: 1.036881446838379Start Evaluation
+		--------
+		Iter: 160, inter_train_loss: 4.880657196044922
+		--------
+
+		--------
+		Iter: 160, inter_aux_loss: [0.469314843416214]
+		--------
+
+		--------
+		test_loss: 261.6585693359375, last best test_loss: 283.9872741699219
+		--------
+
+		--------
+		r_squared: -0.4009408347518295, MSE: 17.243528
+		--------
+
+Current epoch: 4
+Finished Training
+Start evaluation...
+Working on multi-GPU [0, 1, 2, 3]
+Length of df dict: 4015
+Length of call list: 39424
+		--------
+		r_squared: -0.08758529973389528, MSE: 11.831297
+		--------
+
+		--------
+		Differ: 25.510181427001953, count: 39424
+		--------
+
+{'best_err': 11.831296920776367, 'r_squared': -0.08758529973389528, 'list_total_0': [9.938667297363281, 6.436709403991699, 5.439433574676514, 4.880657196044922], 'list_err_0': [533.700927734375, 317.10540771484375, 283.9872741699219, 261.6585693359375]}
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n520
+Job ID: 23822069
+Cluster: uc2
+User/Group: uqqww/stud
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 40
+CPU Utilized: 00:52:24
+CPU Efficiency: 10.36% of 08:26:00 core-walltime
+Job Wall-clock time: 00:12:39
+Memory Utilized: 6.19 GB
+Memory Efficiency: 1.69% of 367.19 GB

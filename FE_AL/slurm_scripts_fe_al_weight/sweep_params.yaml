@@ -1,0 +1,18 @@
+method: grid
+metric:
+  goal: minimize
+  name: best_err
+name: offline-sweep
+parameters:
+  holdout:
+    values:
+    - 0
+    - 1
+    - 2
+    - 3
+  hyper_aux_loss_weight:
+    values:
+    - 0.3
+    - 0.5
+program: ./slurm_wrapper_fe_al.py
+project: fe_al_weight

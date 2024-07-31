@@ -1,0 +1,136 @@
+Start training...
+{
+  "agent_id": "n7d8knmq",
+  "agent_dir": "/pfs/data5/home/kit/stud/uqqww/PEGNN_reg4/wandb/run-20240709_162859-n7d8knmq/files",
+  "holdout": 0,
+  "seed": 1,
+  "origin_path": "./Dataset_res250_reg4c/",
+  "bp": false,
+  "full_batch": 128,
+  "conv_dim": 256,
+  "emb_dim": 16,
+  "lr": 1e-05,
+  "batch": 16,
+  "accumulation_steps": 8,
+  "test_batch": 1,
+  "k": 20,
+  "nn_lr": 1e-05,
+  "es_mindelta": 0.5,
+  "es_endure": 5,
+  "num_features_in": 2,
+  "num_features_out": 1,
+  "emb_hidden_dim": 256,
+  "model": "PEGNN",
+  "fold": 4,
+  "lowest_rank": 1,
+  "hp_marker": "tuned",
+  "nn_length": 3,
+  "nn_hidden_dim": 32,
+  "dropout_rate": 0.1,
+  "nhead": 2,
+  "d_model": 32,
+  "num_encoder_layers": 2,
+  "env_features_in": 11,
+  "transformer_dropout": 0.1,
+  "dim_feedforward": 128,
+  "epoch": 3,
+  "debug": true,
+  "aux_task_num": 1,
+  "hyper_lr": 1e-05,
+  "hyper_decay": 0.0,
+  "hyper_pre": -1,
+  "hyper_interval": 100,
+  "hyper_aux_loss_weight": 0.1,
+  "transformer_dec_output": 32,
+  "coffer_slot": "./coffer_FE_final/23846515-2024-07-09-16-34-46/"
+}
+Working on multi-GPU [0, 1]
+Length of df dict: 2000
+Length of call list: 100352
+Length of df dict: 2000
+Length of call list: 53248
+DataParallel(
+  (module): PEGCN(
+    (spenc): GridCellSpatialRelationEncoder(
+      (ffn): MultiLayerFeedForwardNN(
+        (layers): ModuleList(
+          (0): SingleFeedForwardNN(
+            (dropout): Dropout(p=0.5, inplace=False)
+            (act): ReLU()
+            (linear): Linear(in_features=64, out_features=256, bias=True)
+          )
+        )
+      )
+    )
+    (spdec): Sequential(
+      (0): Linear(in_features=256, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=64, bias=True)
+      (3): Tanh()
+      (4): Linear(in_features=64, out_features=16, bias=True)
+    )
+    (transformer_inc): Linear(in_features=11, out_features=32, bias=True)
+    (transformer_encoder): Transformer(
+      (encoder): Encoder(
+        (layers): ModuleList(
+          (0-1): 2 x EncoderLayer(
+            (norm_1): Norm()
+            (norm_2): Norm()
+            (dropout_1): Dropout(p=0.1, inplace=False)
+            (dropout_2): Dropout(p=0.1, inplace=False)
+            (attn): MultiHeadAttention(
+              (q_linear): Linear(in_features=32, out_features=32, bias=True)
+              (k_linear): Linear(in_features=32, out_features=32, bias=True)
+              (v_linear): Linear(in_features=32, out_features=32, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+              (out): Linear(in_features=32, out_features=32, bias=True)
+            )
+            (ff): FeedForward(
+              (linear_1): Linear(in_features=32, out_features=128, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+              (linear_2): Linear(in_features=128, out_features=32, bias=True)
+            )
+          )
+        )
+        (norm): Norm()
+      )
+    )
+    (transformer_dec): MultiLayerFeedForwardNN(
+      (layers): ModuleList(
+        (0): SingleFeedForwardNN(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (act): ReLU()
+          (layernorm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+          (linear): Linear(in_features=32, out_features=32, bias=True)
+        )
+        (1): SingleFeedForwardNN(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (act): ReLU()
+          (linear): Linear(in_features=32, out_features=32, bias=True)
+        )
+      )
+    )
+    (conv1): GCNConv(50, 256)
+    (conv2): GCNConv(256, 256)
+    (fc): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+
+Training to 3 epochs (16 of mini batch size)
+Each epoch #real_iter: 784.0
+working on training loop
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n520
+Job ID: 23846515
+Cluster: uc2
+User/Group: uqqww/stud
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 20
+CPU Utilized: 00:01:15
+CPU Efficiency: 3.95% of 00:31:40 core-walltime
+Job Wall-clock time: 00:01:35
+Memory Utilized: 642.47 MB
+Memory Efficiency: 0.34% of 183.59 GB

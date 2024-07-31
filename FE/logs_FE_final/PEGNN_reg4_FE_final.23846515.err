@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "./Trainer.py", line 66, in <module>
+    train(job_id, settings)
+  File "./Trainer.py", line 23, in train
+    list_total, list_err = solver.training(settings=settings, job_id=job_id)
+  File "/pfs/data5/home/kit/stud/uqqww/PEGNN_reg4/solver.py", line 223, in training
+    x_b, c_b, y_b, input_lengths, env_features, auxil_lenths = batch
+ValueError: not enough values to unpack (expected 6, got 5)

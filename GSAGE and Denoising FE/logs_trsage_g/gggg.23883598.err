@@ -1,0 +1,17 @@
+MoTTY X11 proxy: Authorisation not recognised
+
+[36mIn case you are trying to start a graphical application with "sudo", read this article in order to avoid this issue:
+[35m[4mhttps://blog.mobatek.net/post/how-to-keep-X11-display-after-su-or-sudo/[0m
+
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)

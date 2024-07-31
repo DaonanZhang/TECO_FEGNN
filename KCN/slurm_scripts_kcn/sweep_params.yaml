@@ -1,0 +1,19 @@
+method: grid
+metric:
+  goal: minimize
+  name: best_err
+name: offline-sweep
+parameters:
+  holdout:
+    values:
+    - 0
+    - 1
+    - 2
+    - 3
+  seed:
+    values:
+    - 1
+    - 2
+    - 3
+program: ./slurm_wrapper_kcn.py
+project: kcn

@@ -1,0 +1,64 @@
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:77: RuntimeWarning: All-NaN slice encountered
+  vmin = self._density_vmin(array)
+/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/mpl_scatter_density/generic_density_artist.py:82: RuntimeWarning: All-NaN slice encountered
+  vmax = self._density_vmax(array)
+Traceback (most recent call last):
+  File "./Trainer.py", line 66, in <module>
+    train(job_id, settings)
+  File "./Trainer.py", line 27, in train
+    best_err, r_squared = solver.evaluate(settings=settings, job_id=job_id)
+  File "/pfs/data5/home/kit/stud/uqqww/PEGNN_reg4/solver.py", line 328, in evaluate
+    mae = mean_absolute_error(test_y_origin, test_means_origin)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/sklearn/utils/_param_validation.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/sklearn/metrics/_regression.py", line 204, in mean_absolute_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/sklearn/metrics/_regression.py", line 100, in _check_reg_targets
+    y_true = check_array(y_true, ensure_2d=False, dtype=dtype)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/sklearn/utils/validation.py", line 917, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/sklearn/utils/_array_api.py", line 380, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+  File "/home/kit/stud/uqqww/miniconda3/envs/ml/lib/python3.8/site-packages/torch/_tensor.py", line 1030, in __array__
+    return self.numpy()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
