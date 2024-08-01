@@ -7,8 +7,9 @@ The Processed Dataset can be found under the link: https://drive.google.com/file
 
 ___
 
+The folder Gaxlearn were implemented from @Cite: Chen H, Wang X, Liu Y, et al. Module-aware optimization for auxiliary learning[J]. Advances in Neural Information Processing Systems, 2022, 35: 31827-31840.
 
-Provide for each model a Test.ipynb file
+Provide for each model a Test.ipynb file (For some model, the path of dataset and gauxlearn are up-to-date)
 
 | name in folder | name in thesis       |
 |----------------|----------------------|
