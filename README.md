@@ -7,3 +7,12 @@ The Processed Dataset can be found under the link: https://drive.google.com/file
 
 ___
 
+
+Provide for each model a Test.ipynb file
+
+| name in folder | name in thesis       |
+|----------------|----------------------|
+| fe_al          | FEGNN                |
+| al_only        | AL                   |
+| Trsage         | Gsage                |
+| Tsage_loss     | Denoising FE         |
